@@ -38,9 +38,9 @@
   (cheat = false),
   //Premios mayores
   (Certification = 3),
-  (ServNow = 2),
+  (ServNow = 0),
   (Serity = 1),
-  (Ipsum = 4);
+  (Ipsum = 6);
 //Elementos de la pagina web
 document.querySelector("#spinner").addEventListener("click", rollAll);
 const SlotSound = document.getElementById("SlotRandom");
@@ -97,7 +97,7 @@ const roll = (reel, offset = 0) => {
     deltaProb =
       (offset + num_icons) * num_icons -
       (rollfix[offset] - iz) +
-      12 * num_icons;
+      1 * num_icons;
   } else {
     //Delta Aleatorio
     deltaProb =
